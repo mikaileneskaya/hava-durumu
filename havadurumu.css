@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400&display=swap');
+
+/* design by Mikail Enes Kaya */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: rgb(52, 28, 75);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("aaaaaaa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.input-container {
+    display: inline-block;
+    position: relative;
+}
+
+.search-box {
+    width: 250px;
+    height: 60px;
+    padding-left: 15px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    transition: 0.1s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.search-box:focus {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+
+.search-box:focus::placeholder {
+    color: transparent;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main {
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.city {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+    font-weight: 500;
+}
+
+.date {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.temp {
+    color: rgba(255, 255, 255);
+    font-size: 100px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
+
+.description {
+    color: rgba(255, 255, 255);
+    font-size: 22px;
+    font-style: italic;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+    margin-bottom: 25px;
+}
+
+.button {
+    display: none;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.button:hover {
+    color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+footer p a {
+    display: inline-block;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-style: italic;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+}
+
+@media only screen and (max-width: 990px) {
+    body {
+        background-image: url("tablet.png");
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url("telefonyenii.png");
+    }
+
+    .city {
+        font-size: 40px;
+    }
+    
+    .temp {
+        font-size: 85px;
+    }
+}
